@@ -13,12 +13,11 @@ h1 {
     text-align: center;
 }
 
-
-p{
+p {
     text-indent: 20px;
 }
 
-h3{
+h3 {
     background-color: #3abcd3;
     color: white;
     text-align: center;
@@ -36,7 +35,271 @@ h3{
     margin-top: 0;
 }
 
-table{
+table {
     text-align: center;
 }
 
+.di {
+    width: 17px;
+    height: 17px;
+    background: red;
+    position: relative;
+    animation-name: myfirst;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    /* Firefox: */
+    -moz-animation-name: myfirst;
+    -moz-animation-duration: 5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-delay: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+    -moz-animation-play-state: running;
+    /* Safari and Chrome: */
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    /* Opera: */
+    -o-animation-name: myfirst;
+    -o-animation-duration: 5s;
+    -o-animation-timing-function: linear;
+    -o-animation-delay: 2s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: alternate;
+    -o-animation-play-state: running;
+}
+
+@keyframes myfirst {
+    0% {
+        background: red;
+        left: 320px;
+        top: -10px;
+    }
+    25% {
+        background: yellow;
+        left: 465px;
+        top: -10px;
+    }
+    50% {
+        background: rgb(87, 103, 241);
+        left: 465px;
+        top: 125px;
+    }
+    75% {
+        background: rgb(60, 243, 130);
+        left: 320px;
+        top: 125px;
+    }
+    100% {
+        background: red;
+        left: 320px;
+        top: -10px;
+    }
+}
+
+@-moz-keyframes myfirst
+/* Firefox */
+
+    {
+    0% {
+        background: red;
+        left: 320px;
+        top: -10px;
+    }
+    25% {
+        background: yellow;
+        left: 465px;
+        top: -10px;
+    }
+    50% {
+        background: rgb(87, 103, 241);
+        left: 465px;
+        top: 125px;
+    }
+    75% {
+        background: green;
+        left: 320px;
+        top: 125px;
+    }
+    100% {
+        background: red;
+        left: 320px;
+        top: -10px;
+    }
+}
+
+@-webkit-keyframes myfirst
+/* Safari and Chrome */
+
+    {
+    0% {
+        background: red;
+        left: 351px;
+        top: -10px;
+    }
+    25% {
+        background: yellow;
+        left: 465px;
+        top: -10px;
+    }
+    50% {
+        background: rgb(87, 103, 241);
+        left: 465px;
+        top: 125px;
+    }
+    75% {
+        background: green;
+        left: 351px;
+        top: 125px;
+    }
+    100% {
+        background: red;
+        left: 351px;
+        top: -10px;
+    }
+}
+
+@-o-keyframes myfirst
+/* Opera */
+
+    {
+    0% {
+        background: red;
+        left: 351px;
+        top: -10px;
+    }
+    25% {
+        background: yellow;
+        left: 465px;
+        top: -10px;
+    }
+    50% {
+        background: rgb(87, 103, 241);
+        left: 465px;
+        top: 125px;
+    }
+    75% {
+        background: green;
+        left: 351px;
+        top: 125px;
+    }
+    100% {
+        background: red;
+        left: 351px;
+        top: -10px;
+    }
+}
+
+.di2 {
+    width: 760px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    margin-top: 0;
+    background: #3abcd3;
+    animation: myfirst1 5s;
+    -moz-animation: myfirst1 5s;
+    /* Firefox */
+    -webkit-animation: myfirst1 5s;
+    /* Safari and Chrome */
+    -o-animation: myfirst1 5s;
+    /* Opera */
+}
+
+@keyframes myfirst1
+{
+0%   {background:#3abcd3;}
+25%  {background:rgb(235, 113, 224);}
+50%  {background:rgb(87, 103, 241);}
+100% {background:rgb(60, 243, 130);}
+}
+
+@-moz-keyframes myfirst1 /* Firefox */
+{
+0%   {background:#3abcd3;}
+25%  {background:rgb(235, 113, 224);}
+50%  {background:rgb(87, 103, 241);}
+100% {background:rgb(60, 243, 130);}
+}
+
+@-webkit-keyframes myfirst1 /* Safari and Chrome */
+{
+0%   {background:#3abcd3;}
+25%  {background:rgb(235, 113, 224);}
+50%  {background:rgb(87, 103, 241);}
+100% {background:rgb(60, 243, 130);}
+}
+
+@-o-keyframes myfirst1 /* Opera */
+{
+0%   {background:#3abcd3;}
+25%  {background:rgb(235, 113, 224);}
+50%  {background:rgb(87, 103, 241);}
+100% {background:rgb(60, 243, 130);}
+}
+
+.di3
+	{
+	width:100px;
+    height:70px;
+    background:#3abcd3;
+	color:#ffffff;
+	position:relative;
+	font-weight:bold;
+	font:bold 12px '微软雅黑', Verdana, Arial, Helvetica, sans-serif;
+	padding:3px 10px 0px 10px;
+	animation:animated_div 13s 1;
+	-moz-animation:animated_div 13s 1;
+	-webkit-animation:animated_div 13s 1;
+	-o-animation:animated_div 13s 1;
+	border-radius:500px;
+	-webkit-border-radius:500px;
+	}
+
+@keyframes animated_div
+	{
+	0%		{transform: rotate(0deg);left:500px;}
+	25%		{transform: rotate(20deg);left:500px;}
+	50%		{transform: rotate(0deg);left:1400px;}
+	55%		{transform: rotate(0deg);left:1400px;}
+	70%		{transform: rotate(0deg);left:1400px;background:#eafa57;}
+	100%	{transform: rotate(-360deg);left:500px;}
+	}
+
+@-webkit-keyframes animated_div
+	{
+	0%		{-webkit-transform: rotate(0deg);left:500px;}
+	25%		{-webkit-transform: rotate(20deg);left:500px;}
+	50%		{-webkit-transform: rotate(0deg);left:1400px;}
+	55%		{-webkit-transform: rotate(0deg);left:1400px;}
+	70%		{-webkit-transform: rotate(0deg);left:1400px;background:#98fa57;}
+	100%	{-webkit-transform: rotate(-360deg);left:500px;}
+	}
+
+@-moz-keyframes animated_div
+	{
+	0%   {-moz-transform: rotate(0deg);left:500px;}
+	25%  {-moz-transform: rotate(20deg);left:500px;}
+	50%  {-moz-transform: rotate(0deg);left:1400px;}
+	55%  {-moz-transform: rotate(0deg);left:1400px;}
+	70%  {-moz-transform: rotate(0deg);left:1400px;background:#7a57fa;}
+	100% {-moz-transform: rotate(-360deg);left:500px;}
+	}
+
+@-o-keyframes animated_div
+	{
+	0%   {transform: rotate(0deg);left:500px;}
+	25%  {transform: rotate(20deg);left:500px;}
+	50%  {transform: rotate(0deg);left:1400px;}
+	55%  {transform: rotate(0deg);left:1400px;}
+	70%  {transform: rotate(0deg);left:1400px;background:#fa57bb;}
+	100% {transform: rotate(-360deg);left:500px;}
+	}
