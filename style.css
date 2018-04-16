@@ -26,6 +26,12 @@ h3 {
 
 .dt {
     text-align: center;
+
+}
+
+.dt1 {
+    text-align: center;
+    padding-top: 69px;
 }
 
 .container {
@@ -200,11 +206,11 @@ table {
 
 .di2 {
     width: 760px;
-    height: 50px;
+    height: 70px;
     margin: 0 auto;
     padding: 0px 20px;
-    margin-top: 0;
     background: #3abcd3;
+    position: fixed;
     animation: myfirst1 5s;
     -moz-animation: myfirst1 5s;
     /* Firefox */
@@ -302,4 +308,26 @@ table {
 	55%  {transform: rotate(0deg);left:1400px;}
 	70%  {transform: rotate(0deg);left:1400px;background:#fa57bb;}
 	100% {transform: rotate(-360deg);left:500px;}
-	}
+    }
+    
+    .di4
+    {
+    width:100px;
+    height:100px;
+    margin: 0 auto;
+    transition:width 2s, height 2s;
+    -moz-transition:width 2s, height 2s, -moz-transform 2s; /* Firefox 4 */
+    -webkit-transition:width 2s, height 2s, -webkit-transform 2s; /* Safari and Chrome */
+    -o-transition:width 2s, height 2s, -o-transform 2s; /* Opera */
+    }
+    
+    .di4:hover
+    {
+    width:200px;
+    height:200px;
+    margin: 0 auto;
+    transform:rotate(180deg);
+    -moz-transform:rotate(180deg); /* Firefox 4 */
+    -webkit-transform:rotate(180deg); /* Safari and Chrome */
+    -o-transform:rotate(180deg); /* Opera */
+    }
